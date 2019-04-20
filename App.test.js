@@ -10,3 +10,7 @@ it('Quantity', () =>
     expect(
         orderTotal({ items: [{ name: 'abc', price: 120, quantity: 2 }] })
     ).toBe(240));
+it('fail Quantity', () =>
+    expect(
+        orderTotal({ items: [{ name: 'abc', price: 120, quantity: 2 }] })
+    ).toBe(241));
